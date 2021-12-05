@@ -6,6 +6,7 @@ React,redux,redux-thunk, API,JEST, LTR
 ## Steps for run
 git clone or download react-redux-jest-shop<br />
 cd react-redux-jest-shop<br />
+yarn install <br />
 yarn start <br />
 yarn test <br />
 
