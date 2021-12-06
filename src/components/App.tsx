@@ -1,8 +1,7 @@
 import {
-  BrowserRouter,
   Routes,
   Route,
-  Navigate,
+  BrowserRouter,
 } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../redux/store'; // eslint-disable-line
@@ -18,10 +17,7 @@ const App = () => (
       <Routes>
         <Route path="/" element={<ListProductComp />} />
         <Route path="basket" element={<CartComp />} />
-        <Route
-          path="*"
-          element={<Navigate to="/" />}
-        />
+        <Route path="*" element={<ListProductComp />} />
       </Routes>
     </BrowserRouter>
   </Provider>
