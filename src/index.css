@@ -1,5 +1,6 @@
 body {
   display: grid;
+  background-color: #e6eef5;
   max-width: 1140px;
   width: 100%;
   margin: 0 auto;

@@ -7,6 +7,7 @@
 
 .CartSummary {
     display: inherit;
+    background-color: white;
     align-content: flex-start;
     margin: 3px;
     padding: 20px;
@@ -31,6 +32,7 @@
   
 .CartItems_ul_li {
     display: grid;
+    background-color: white;
     grid-template-columns: 10% 45% 20% 13% 10%;
     align-items: center;
     margin: 3px;
@@ -82,6 +84,7 @@
 
 .ProductItems_ul_li {
     display: grid;
+    background-color: white;
     margin: 3px;
     grid-template-rows: 36% 33% 19% 8%;
     padding: 20px;
