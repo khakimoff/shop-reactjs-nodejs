@@ -18,4 +18,5 @@ yarn test <br />
 ### Mobile main
 <img width="348" alt="Снимок экрана 2021-12-07 в 10 44 54" src="https://user-images.githubusercontent.com/34871899/144987671-1e041085-4d1a-4b59-b8ab-fa468457d5ff.png"><br />
 ### Mobile cart
-<img width="795" alt="Снимок экрана 2021-12-07 в 10 43 12" src="https://user-images.githubusercontent.com/34871899/144987692-2c428cb9-ab3a-469c-85ca-b9ce73bf2434.png"><br />
+<img width="346" alt="Снимок экрана 2021-12-07 в 10 44 28" src="https://user-images.githubusercontent.com/34871899/144988150-46b73211-ea37-419e-93d1-0c99ba07e663.png">
+<br />
