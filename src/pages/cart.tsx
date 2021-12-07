@@ -14,12 +14,12 @@ const CartPage = () => {
   const notEqualNilLength = itemLenght !== 0;
 
   return (
-    <main className="CartPage">
+    <main>
       {notEqualNilLength
         ? (
           <>
-            <h2>Cart</h2>
-            <div className="CartPage_wr">
+            <h3>Cart</h3>
+            <div className="CartPage">
               <CartItemComp
                 items={itemsCart}
               />

@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <input
-        class="Button_input"
+        class="Button"
         type="submit"
         value="Add to cart"
       />
@@ -14,7 +14,7 @@ Object {
   </body>,
   "container": <div>
     <input
-      class="Button_input"
+      class="Button"
       type="submit"
       value="Add to cart"
     />

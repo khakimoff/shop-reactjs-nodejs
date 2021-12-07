@@ -22,7 +22,7 @@ const CartItems = ({ items }: CartItemsType) => {
   const dispatch = useDispatch();
 
   return (
-    <ul className="CartItems_ul">
+    <ul className="CartItems">
       {cartItems.map((item: CartItemPropsType) => {
         const {
           price, quantity, image, id, title,
@@ -31,7 +31,6 @@ const CartItems = ({ items }: CartItemsType) => {
         const cartItemsSum = parseFloat((price * quantity).toFixed(2));
         return (
           <li
-            className="CartItems_ul_li"
             key={id}
           >
             <ImageComp
@@ -41,16 +40,14 @@ const CartItems = ({ items }: CartItemsType) => {
               alt="product"
             />
             <p>{title}</p>
-            <div
-              className="CartItems_ul_li--wrapper"
-            >
+            <div>
               <ButtonComp
                 title="-"
                 onClick={() => dispatch(decQuantity(id))}
               />
-              <div>
+              <p>
                 {quantity}
-              </div>
+              </p>
               <ButtonComp
                 title="+"
                 onClick={() => dispatch(addQuantity(id))}
@@ -66,7 +63,7 @@ const CartItems = ({ items }: CartItemsType) => {
               role="button"
               tabIndex={0}
               aria-label="Delete"
-              className="CartItems_ul_li--closed"
+              className="delete"
             />
           </li>
         );

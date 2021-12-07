@@ -19,9 +19,7 @@ Object {
               width="50"
             />
           </a>
-          <div
-            class="Navigation_wrap"
-          >
+          <div>
             <a
               hidden=""
               href="/basket"
@@ -46,7 +44,7 @@ Object {
           Products list
         </h3>
         <div
-          class="ProductPage_loader"
+          class="Loader"
         >
           <img
             alt="product"
@@ -73,9 +71,7 @@ Object {
             width="50"
           />
         </a>
-        <div
-          class="Navigation_wrap"
-        >
+        <div>
           <a
             hidden=""
             href="/basket"
@@ -100,7 +96,7 @@ Object {
         Products list
       </h3>
       <div
-        class="ProductPage_loader"
+        class="Loader"
       >
         <img
           alt="product"

@@ -12,7 +12,7 @@ Object {
           Products list
         </h3>
         <div
-          class="ProductPage_loader"
+          class="Loader"
         >
           <img
             alt="product"
@@ -32,7 +32,7 @@ Object {
         Products list
       </h3>
       <div
-        class="ProductPage_loader"
+        class="Loader"
       >
         <img
           alt="product"

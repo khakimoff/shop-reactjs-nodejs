@@ -6,11 +6,9 @@ Object {
   "baseElement": <body>
     <div>
       <ul
-        class="CartItems_ul"
+        class="CartItems"
       >
-        <li
-          class="CartItems_ul_li"
-        >
+        <li>
           <img
             alt="product"
             height="50"
@@ -20,17 +18,15 @@ Object {
           <p>
             sweater
           </p>
-          <div
-            class="CartItems_ul_li--wrapper"
-          >
+          <div>
             <input
-              class="Button_input"
+              class="Button"
               type="submit"
               value="-"
             />
-            <div />
+            <p />
             <input
-              class="Button_input"
+              class="Button"
               type="submit"
               value="+"
             />
@@ -41,7 +37,7 @@ Object {
           </p>
           <div
             aria-label="Delete"
-            class="CartItems_ul_li--closed"
+            class="delete"
             role="button"
             tabindex="0"
           />
@@ -51,11 +47,9 @@ Object {
   </body>,
   "container": <div>
     <ul
-      class="CartItems_ul"
+      class="CartItems"
     >
-      <li
-        class="CartItems_ul_li"
-      >
+      <li>
         <img
           alt="product"
           height="50"
@@ -65,17 +59,15 @@ Object {
         <p>
           sweater
         </p>
-        <div
-          class="CartItems_ul_li--wrapper"
-        >
+        <div>
           <input
-            class="Button_input"
+            class="Button"
             type="submit"
             value="-"
           />
-          <div />
+          <p />
           <input
-            class="Button_input"
+            class="Button"
             type="submit"
             value="+"
           />
@@ -86,7 +78,7 @@ Object {
         </p>
         <div
           aria-label="Delete"
-          class="CartItems_ul_li--closed"
+          class="delete"
           role="button"
           tabindex="0"
         />

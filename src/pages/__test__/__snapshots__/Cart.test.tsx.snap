@@ -5,9 +5,7 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <main
-        class="CartPage"
-      >
+      <main>
         <h1
           class="Notification"
         >
@@ -17,9 +15,7 @@ Object {
     </div>
   </body>,
   "container": <div>
-    <main
-      class="CartPage"
-    >
+    <main>
       <h1
         class="Notification"
       >

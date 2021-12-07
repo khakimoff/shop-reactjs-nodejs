@@ -8,7 +8,7 @@ import store from '../redux/store'; // eslint-disable-line
 import ListProductComp from '../pages/productsList'; // eslint-disable-line
 import CartComp from '../pages/cart'; // eslint-disable-line
 import NavigationComp from './Naviagation'; // eslint-disable-line
-import './App.css';
+import './App.scss';
 
 const App = () => (
   <Provider store={store}>

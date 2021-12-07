@@ -12,20 +12,16 @@ Object {
         </b>
       </p>
       <ul
-        class="ProductItems_ul"
+        class="ProductItems"
       >
-        <li
-          class="ProductItems_ul_li"
-        >
+        <li>
           <img
             alt="image"
             height="100"
             src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
             width="100"
           />
-          <p
-            class="ProductItems_ul_li--p"
-          >
+          <p>
             sweater
           </p>
           <p>
@@ -33,7 +29,7 @@ Object {
             109.95
           </p>
           <input
-            class="Button_input"
+            class="Button"
             type="submit"
             value="Add to cart"
           />
@@ -49,20 +45,16 @@ Object {
       </b>
     </p>
     <ul
-      class="ProductItems_ul"
+      class="ProductItems"
     >
-      <li
-        class="ProductItems_ul_li"
-      >
+      <li>
         <img
           alt="image"
           height="100"
           src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
           width="100"
         />
-        <p
-          class="ProductItems_ul_li--p"
-        >
+        <p>
           sweater
         </p>
         <p>
@@ -70,7 +62,7 @@ Object {
           109.95
         </p>
         <input
-          class="Button_input"
+          class="Button"
           type="submit"
           value="Add to cart"
         />

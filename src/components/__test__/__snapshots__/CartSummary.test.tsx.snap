@@ -81,7 +81,7 @@ Object {
             />
           </div>
           <input
-            class="Button_input"
+            class="Button"
             type="submit"
             value="Buy"
           />
@@ -166,7 +166,7 @@ Object {
           />
         </div>
         <input
-          class="Button_input"
+          class="Button"
           type="submit"
           value="Buy"
         />

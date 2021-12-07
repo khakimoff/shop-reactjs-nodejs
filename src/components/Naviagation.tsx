@@ -23,7 +23,7 @@ const Naviagation = () => {
             alt="logo"
           />
         </Link>
-        <div className="Navigation_wrap">
+        <div>
           <Link
             hidden={itemCartAmount === 0}
             to="/basket"

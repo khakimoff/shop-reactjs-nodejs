@@ -6,7 +6,7 @@ type TypeButton = {
 
 const Button = ({ title, onClick }: TypeButton) => (
   <input
-    className="Button_input"
+    className="Button"
     type="submit"
     onClick={onClick}
     value={title}

@@ -10,12 +10,6 @@ type TypeProductPage = {
   products: []
 }
 
-// interface SomeType  {
-//   loading: boolean,
-//   products: any,
-//   hasErrors: boolean
-// }
-
 const ProductPage = () => {
   const stateProducts = useSelector((state:TypeProductPage) => state.products);
   const { loading, products, hasErrors }:any = stateProducts;
@@ -30,7 +24,7 @@ const ProductPage = () => {
     if (loading) {
       return (
         <div
-          className="ProductPage_loader"
+          className="Loader"
         >
           <ImageComp
             src={Loading}

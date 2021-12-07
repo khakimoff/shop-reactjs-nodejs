@@ -24,10 +24,9 @@ const ProductItems = ({ products }: ProductItemsType) => {
         Total:&nbsp;
         <b>{products.length}</b>
       </p>
-      <ul className="ProductItems_ul">
+      <ul className="ProductItems">
         {products.map((item: ProductItemPropsType) => (
           <li
-            className="ProductItems_ul_li"
             key={item.id}
           >
             <ImageComp
@@ -36,9 +35,7 @@ const ProductItems = ({ products }: ProductItemsType) => {
               src={item.image}
               alt="image"
             />
-            <p
-              className="ProductItems_ul_li--p"
-            >
+            <p>
               {item.title}
             </p>
             <p>
