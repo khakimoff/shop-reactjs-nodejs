@@ -1,7 +1,7 @@
 # Getting Started with react-redux-jest-shop
 
 ## Shop cart page with use:
-React, redux, redux-thunk, TypeScript, REST API, JEST,LTR
+React, Redux, Redux-thunk, TypeScript, REST API, JEST,LTR
 
 ## Steps for run
 git clone or download react-redux-jest-shop<br />
