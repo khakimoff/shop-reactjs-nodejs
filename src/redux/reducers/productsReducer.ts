@@ -1,27 +1,21 @@
-import * as actions from '../actions/productAction';
+/* eslint-disable */
+import { ProductsState, ProductsAction, ProductsActionTypes } from '../types';
 
-// Type
-type InitialStateType = {
-  products: [],
-  loading: boolean,
-  hasErrors: boolean,
-}
-
-// Intial state
-const initialState:InitialStateType = {
+// Intiial state
+const initialState: ProductsState = {
   products: [],
   loading: false,
   hasErrors: false,
 };
 
 // Reducer
-function productsReducer(state = initialState, action: any = {}) {
+function productsReducer(state = initialState, action: ProductsAction): ProductsState {
   switch (action.type) {
-    case actions.GET_PRODUCT:
+    case ProductsActionTypes.GET_PRODUCTS:
       return { ...state, loading: true };
-    case actions.GET_PRODUCT_SUCCESS:
+    case ProductsActionTypes.GET_PRODUCTS_SUCCESS:
       return { products: action.payload, loading: false, hasErrors: false };
-    case actions.GET_PRODUCT_FAILURE:
+    case ProductsActionTypes.GET_PRODUCTS_FAILURE:
       return { ...state, loading: false, hasErrors: true };
     default:
       return state;

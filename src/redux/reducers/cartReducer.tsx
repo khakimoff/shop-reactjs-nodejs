@@ -1,19 +1,14 @@
 /* eslint-disable */
-import * as actions from '../actions/cartAction';
-
-// Type
-type CartReducerType = {
-  id: number,
-  quantity: number,
-}
+import { CartActionTypes, CartAction } from '../types';
+import { CartItemPropsType } from '../../components/CartItems';
 
 // Reducer
-function cartReducer(state = [], action:any = {}) {
+function cartReducer(state = [], action: CartAction) {
   let doesItemExist;
   switch (action.type) {
-    case actions.ADD_TO_CART:
+    case CartActionTypes.ADD_TO_CART:
       doesItemExist = false;
-      const newState = state.map((item:CartReducerType) => {
+      const newState = state.map((item: CartItemPropsType) => {
         if (item.id === action.payload.id) {
           item.quantity += 1;
           doesItemExist = true;
@@ -25,8 +20,8 @@ function cartReducer(state = [], action:any = {}) {
       }
       return [...state, { ...action.payload, quantity: 1 }];
 
-    case actions.REMOVE_FROM_CART:
-      const newCartState = state.filter((item:CartReducerType) => {
+    case CartActionTypes.REMOVE_FROM_CART:
+      const newCartState = state.filter((item: CartItemPropsType) => {
         if (item.id === action.payload) {
           return false;
         }
@@ -34,16 +29,16 @@ function cartReducer(state = [], action:any = {}) {
       });
       return newCartState;
 
-    case actions.ADD_QUANTITY:
-      const addedItem:any = state.find((item:CartReducerType) => item.id === action.payload);
-      addedItem.quantity += 1;
+    case CartActionTypes.ADD_QUANTITY:
+      const addedItem = state.find((item: CartItemPropsType) => item.id === action.payload);
+      (addedItem as any).quantity += 1;
       return [...state];
 
-    case actions.DEC_QUANTITY:
-      const decrItem:any = state.find((item:CartReducerType) => item.id === action.payload);
-      decrItem.quantity -= 1;
-      if (decrItem.quantity === 0) {
-        const newCartState = state.filter((item:CartReducerType) => {
+    case CartActionTypes.DEC_QUANTITY:
+      const decrItem = state.find((item: CartItemPropsType) => item.id === action.payload);
+      (decrItem as any).quantity -= 1;
+      if ((decrItem as any).quantity === 0) {
+        const newCartState = state.filter((item: CartItemPropsType) => {
           if (item.id === action.payload) {
             return false;
           }

@@ -10,7 +10,7 @@ type NaviagationType = {
 }
 const Naviagation = () => {
   // Number of products
-  const itemCartAmount = useSelector((state:NaviagationType) => state.cart.length);
+  const itemCartAmount = useSelector((state: NaviagationType) => state.cart.length);
 
   return (
     <header>
