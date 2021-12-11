@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import ProductItemsComp from '../components/ProductItems'; // eslint-disable-line
 import ImageComp from '../components/Image'; // eslint-disable-line
 import NotificationComp from '../components/Notification'; // eslint-disable-line
-import { fetchProducts } from '../redux/actions/productAction';
+import fetchProducts from '../redux/actions/productAction'; // eslint-disable-line
 import Loading from '../static/loading.gif';
 
 type TypeProductPage = {
@@ -17,7 +17,7 @@ const ProductPage = () => {
 
   useEffect(() => {
     dispatch(fetchProducts());
-  }, [dispatch]);
+  }, []);
 
   // Show loading, error, or success state
   const renderProducts = () => {

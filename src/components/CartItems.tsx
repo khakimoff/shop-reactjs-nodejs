@@ -1,18 +1,18 @@
 import { useDispatch } from 'react-redux';
-import { removeFromCart, addQuantity, decQuantity } from '../redux/actions/cartAction';
+import { removeFromCart, addQuantity, decQuantity } from '../redux/actions/cartAction'; // eslint-disable-line
 import ImageComp from './Image'; // eslint-disable-line
 import ButtonComp from './Button'; // eslint-disable-line
 
 // Type
-type CartItemsType = {
+export type CartItemsType = {
     items: []
 }
 
-type CartItemPropsType = {
+export type CartItemPropsType = {
     price: number,
     quantity: number
     image: string,
-    id: number,
+    id: any,
     title: string
 }
 

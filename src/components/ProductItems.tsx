@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import ButtonComp from './Button' // eslint-disable-line
 import ImageComp from './Image' // eslint-disable-line
-import { postProduct } from '../redux/actions/productAction';
+import { addToCart } from '../redux/actions/cartAction'; // eslint-disable-line
 
 // Type
 export type ProductItemsType = {
@@ -44,7 +44,7 @@ const ProductItems = ({ products }: ProductItemsType) => {
             </p>
             <ButtonComp
               title="Add to cart"
-              onClick={() => dispatch(postProduct(products[item.id - 1]))}
+              onClick={() => dispatch(addToCart(products[item.id - 1]))}
             />
           </li>
         ))}
