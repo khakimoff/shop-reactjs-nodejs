@@ -4,7 +4,7 @@
 React, Redux, Redux-thunk, TypeScript, REST API, JEST/RTL
 
 ## Steps for run
-git clone or download react-redux-jest-shop<br />
+git clone https://github.com/it-cats/react-redux-jest-shop.git<br />
 cd react-redux-jest-shop<br />
 yarn install <br />
 yarn start <br />
