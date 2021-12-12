@@ -5,7 +5,7 @@ import Logo from '../static/logo.png';
 import Basket from '../static/basket.png';
 
 // Type
-type NaviagationType = {
+export type NaviagationType = {
     cart: []
 }
 const Naviagation = () => {
