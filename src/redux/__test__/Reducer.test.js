@@ -44,7 +44,6 @@ describe('Redux testing', () => {
     })
   })
 
-
   it('GET_PRODUCTS_FAILURE case', () => {
     const prevState = {
       products: [],
