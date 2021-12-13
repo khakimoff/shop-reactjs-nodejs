@@ -1,0 +1,14 @@
+.CartRow {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    p {
+        font-weight: 500
+    }
+}
+
+/* media query */
+@media screen and (max-width: 1100px) {    
+    .CartRow {
+        grid-template-columns: 20% 80%;
+    }
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
-import App from './components/App' // eslint-disable-line
+import App from './components/AppComp/App' // eslint-disable-line
 
 ReactDOM.render(
   <React.StrictMode>

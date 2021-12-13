@@ -1,0 +1,16 @@
+.CartPage {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+main h3 {
+    margin-left: 18px;
+}
+
+/* media query */
+@media screen and (max-width: 1100px) {
+    .CartPage {
+        grid-template-columns: none;
+    }
+}
