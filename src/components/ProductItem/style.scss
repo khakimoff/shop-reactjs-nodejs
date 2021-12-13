@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 0;
+
     li {
         display: inherit;
         background-color: white;
@@ -11,6 +12,7 @@
         border: 1px solid green;
         border-radius: 2px;
         place-items: center;
+
         p {
             text-align: center;
         }
@@ -36,9 +38,3 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
-
-
-
-
-
-

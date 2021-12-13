@@ -6,15 +6,15 @@ import './style.scss'; // eslint-disable-line
 
 // Type
 export type CartItemsType = {
-    items: []
+  items: []
 }
 
 export type CartItemPropsType = {
-    price: number,
-    quantity: number
-    image: string,
-    id: any,
-    title: string
+  price: number,
+  quantity: number
+  image: string,
+  id: any,
+  title: string
 }
 
 const CartItems = ({ items }: CartItemsType) => {
@@ -58,14 +58,12 @@ const CartItems = ({ items }: CartItemsType) => {
               $
               {cartItemsSum}
             </p>
-            <div
-              onClick={() => dispatch(removeFromCart(id))}
-              onKeyPress={() => dispatch(removeFromCart(id))}
-              role="button"
-              tabIndex={0}
-              aria-label="Delete"
-              className="delete"
-            />
+            <div>
+              <ButtonComp
+                title="x"
+                onClick={() => dispatch(removeFromCart(id))}
+              />
+            </div>
           </li>
         );
       })}

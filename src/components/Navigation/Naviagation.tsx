@@ -7,7 +7,7 @@ import './style.scss';
 
 // Type
 export type NaviagationType = {
-    cart: []
+  cart: []
 }
 const Naviagation = () => {
   // Number of products

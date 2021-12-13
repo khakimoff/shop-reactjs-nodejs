@@ -1,9 +1,9 @@
 import './style.scss';
 // Type
 type TypeCartRow = {
-    title: string,
-    amount?: number,
-    sum: number
+  title: string,
+  amount?: number,
+  sum: number
 } & typeof defaultProps;
 
 const defaultProps = {

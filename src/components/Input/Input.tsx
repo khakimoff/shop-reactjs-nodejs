@@ -3,12 +3,12 @@ import './style.scss';
 
 // Type
 type TypeInput = {
-    type: string,
-    title: string,
-    htmlFor: string,
-    size: number,
-    ariaRequired: boolean,
-    placeholder: string
+  type: string,
+  title: string,
+  htmlFor: string,
+  size: number,
+  ariaRequired: boolean,
+  placeholder: string
 }
 
 const Input = ({
@@ -30,4 +30,4 @@ const Input = ({
   </div>
 );
 
-export default React.memo(Input);
+export default Input;

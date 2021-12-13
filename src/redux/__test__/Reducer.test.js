@@ -1,15 +1,23 @@
 /* eslint-disable */
-import cartReducer from '../reducers/cartReducer'; 
+import cartReducer from '../reducers/cartReducer';
 import productsReducer from '../reducers/productsReducer';
-import { addToCart } from '../actions/cartAction';
-import { ProductsActionTypes } from '../types';
-import { initialState } from '../reducers/productsReducer';
+import {
+  addToCart
+} from '../actions/cartAction';
+import {
+  ProductsActionTypes
+} from '../types';
+import {
+  initialState
+} from '../reducers/productsReducer';
 
-const MockCartItems = [
-  {
-    id: 1, title: 'sweater', price: 109.95, category: "men's clothing", image: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg'
-  },
-];
+const MockCartItems = [{
+  id: 1,
+  title: 'sweater',
+  price: 109.95,
+  category: "men's clothing",
+  image: 'https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg'
+}, ];
 
 describe('Redux testing', () => {
 
@@ -33,13 +41,13 @@ describe('Redux testing', () => {
 
     const action = {
       type: ProductsActionTypes.GET_PRODUCTS_SUCCESS,
-      payload: [1,2,3,4,5]
+      payload: [1, 2, 3, 4, 5]
     }
 
     expect(productsReducer(prevState, action)).toEqual({
       ...prevState,
       products: action.payload,
-      loading: false, 
+      loading: false,
       hasErrors: false
     })
   })
@@ -50,26 +58,24 @@ describe('Redux testing', () => {
       loading: true,
       hasErrors: false
     }
-    
+
     const action = {
       type: ProductsActionTypes.GET_PRODUCTS_FAILURE
     }
 
     expect(productsReducer(prevState, action)).toEqual({
       ...prevState,
-      loading: false, 
+      loading: false,
       hasErrors: true
     })
   })
 
   it('should return the initial state in productsReducer', () => {
-    expect(productsReducer(undefined, {})).toEqual(
-      {
-        products: [],
-        loading: false,
-        hasErrors: false,
-      }
-    )
+    expect(productsReducer(undefined, {})).toEqual({
+      products: [],
+      loading: false,
+      hasErrors: false,
+    })
   })
 
   it('should return the initial state in cartReducer', () => {
@@ -80,33 +86,29 @@ describe('Redux testing', () => {
 
   it('should added product to an empty list', () => {
     const previousState = []
-    expect(cartReducer(previousState, addToCart(MockCartItems))).toEqual([
-      {
-        "0": {
-          "category": "men's clothing",
-          "id": 1,
-          "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-          "price": 109.95,
-          "title": "sweater",
-        },
-        "quantity": 1,
-      }
-    ])
+    expect(cartReducer(previousState, addToCart(MockCartItems))).toEqual([{
+      "0": {
+        "category": "men's clothing",
+        "id": 1,
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "price": 109.95,
+        "title": "sweater",
+      },
+      "quantity": 1,
+    }])
   })
 
   it('ADD_TO_CART case', () => {
     const initialState = []
-    expect(cartReducer(initialState, addToCart(MockCartItems))).toEqual([
-      {
-        "0": {
-          "category": "men's clothing",
-          "id": 1,
-          "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-          "price": 109.95,
-          "title": "sweater",
-        },
-        "quantity": 1,
-      }
-    ])
+    expect(cartReducer(initialState, addToCart(MockCartItems))).toEqual([{
+      "0": {
+        "category": "men's clothing",
+        "id": 1,
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "price": 109.95,
+        "title": "sweater",
+      },
+      "quantity": 1,
+    }])
   })
 });

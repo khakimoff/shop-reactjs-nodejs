@@ -12,8 +12,8 @@ type TypeProductPage = {
 }
 
 const ProductPage = () => {
-  const stateProducts = useSelector((state:TypeProductPage) => state.products);
-  const { loading, products, hasErrors }:any = stateProducts;
+  const stateProducts = useSelector((state: TypeProductPage) => state.products);
+  const { loading, products, hasErrors }: any = stateProducts;
   const dispatch = useDispatch();
 
   useEffect(() => {

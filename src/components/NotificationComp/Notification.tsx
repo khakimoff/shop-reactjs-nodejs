@@ -2,7 +2,7 @@ import './style.scss';
 
 // Type
 type NotificationType = {
-    title: string
+  title: string
 }
 
 const Notification = ({ title }: NotificationType) => (

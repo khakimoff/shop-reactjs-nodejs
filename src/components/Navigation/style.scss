@@ -2,14 +2,17 @@
     display: flex;
     justify-content: space-between;
     margin: 1rem;
+
     div {
         position: relative;
         right: 3.5rem;
+
         a {
-            position: fixed; 
+            position: fixed;
             background: white;
             border-radius: 13px;
             background-color: #e6eef5;
+
             p {
                 position: absolute;
                 top: 17%;

@@ -5,12 +5,12 @@ import './style.scss';
 
 // Type
 type TypeCartSummary = {
-    items: [],
+  items: [],
 }
 
 type TypeCartSummaryItem = {
-    quantity: number,
-    price: number
+  quantity: number,
+  price: number
 }
 
 const CartSummary = ({ items }: TypeCartSummary) => {

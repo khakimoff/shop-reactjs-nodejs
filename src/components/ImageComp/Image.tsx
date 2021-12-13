@@ -2,10 +2,10 @@ import React from 'react';
 
 // Type
 type ImageType = {
-    src: string,
-    width?: number,
-    height?: number,
-    alt: string,
+  src: string,
+  width?: number,
+  height?: number,
+  alt: string,
 } & typeof defaultProps
 
 const defaultProps = {
@@ -16,7 +16,7 @@ const defaultProps = {
 const Image = (
   {
     src, width, height, alt,
-  } : ImageType,
+  }: ImageType,
 ) => (
   <img
     src={src}
@@ -28,4 +28,4 @@ const Image = (
 
 Image.defaultProps = defaultProps;
 
-export default React.memo(Image);
+export default Image;

@@ -1,6 +1,7 @@
 .CartItems {
     margin: 0;
     padding: 0;
+
     li {
         display: grid;
         background-color: white;
@@ -11,24 +12,15 @@
         border: 1px solid green;
         border-radius: 2px;
         grid-gap: 9px;
+
         div {
             display: grid;
             grid-template-columns: 30% 40% 30%;
             width: 136px;
             align-items: center;
+
             p {
                 text-align: center;
-            }
-        }
-        div:last-child {
-            &:after {
-            display: inline-block;
-            content: "\00d7";
-            font-size: 21px;
-            }
-            &:hover {
-                font-weight: 500;
-                cursor: pointer;
             }
         }
     }
@@ -55,17 +47,13 @@
 @media screen and (max-width: 500px) {
     .CartItems li {
         grid-template-columns: 18% 22% 24% 19% 7%;
+
         div {
             width: 73px;
+
             p {
                 margin: 0;
             }
         }
     }
 }
-
-
-
-
-
-

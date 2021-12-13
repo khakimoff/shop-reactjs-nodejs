@@ -2,17 +2,18 @@
 import './style.scss'; // eslint-disable-line
 // Type
 type TypeButton = {
-    title: string,
-    onClick: () => void
+  title: string,
+  onClick: () => void
 }
 
 const Button = ({ title, onClick }: TypeButton) => (
-  <input
+  <button
     className="Button"
     type="submit"
     onClick={onClick}
-    value={title}
-  />
+  >
+    {title}
+  </button>
 );
 
 export default Button;

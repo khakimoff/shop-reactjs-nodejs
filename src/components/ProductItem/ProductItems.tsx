@@ -6,14 +6,14 @@ import './style.scss';
 
 // Type
 export type ProductItemsType = {
-    products: []
+  products: []
 }
 
 export type ProductItemPropsType = {
-    id: number,
-    image: string,
-    title: string
-    price: number
+  id: number,
+  image: string,
+  title: string
+  price: number
 }
 
 const ProductItems = ({ products }: ProductItemsType) => {
