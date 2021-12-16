@@ -13,6 +13,7 @@ const CartPage = () => {
   const itemsCart = useSelector((state: TypeCart) => state.cart);
   const itemLenght = itemsCart.map((item: TypeCart) => item.quantity).reduce((a, b) => a + b, 0);
   const notEqualNilLength = itemLenght !== 0;
+  console.log(itemsCart, 'itemsCart');
 
   return (
     <main>
