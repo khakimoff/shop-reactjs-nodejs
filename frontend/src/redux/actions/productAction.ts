@@ -6,7 +6,7 @@ function fetchProducts() {
   return async (dispatch: Dispatch<ProductsAction>) => {
     dispatch({ type: ProductsActionTypes.GET_PRODUCTS });
     try {
-      const response = await fetch('http://localhost:3000/api/products');
+      const response = await fetch(`${process.env.REACT_APP_API_DOMAIN}/api/products`);
       const data = await response.json();
       dispatch({ type: ProductsActionTypes.GET_PRODUCTS_SUCCESS, payload: data });
     } catch (error) {
