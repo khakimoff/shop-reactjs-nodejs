@@ -3,9 +3,13 @@
 ## Shop cart page with use:
 React, Redux, Redux-thunk, TypeScript, REST API, JEST/RTL, Node.js
 
-## Steps for run
-git clone https://github.com/it-cats/react-redux-jest-shop.git<br />
-cd react-redux-jest-shop<br />
+## Steps for run server
+cd backend-express <br />
+yarn install <br />
+node app.js <br />
+
+## Steps for run client
+cd frontend <br />
 yarn install <br />
 yarn start <br />
 yarn test <br />
