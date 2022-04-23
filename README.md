@@ -1,4 +1,4 @@
-# 111Getting Started with react-redux-jest-shop
+# Getting Started with react-redux-jest-shop
 
 ## Shop cart page with use:
 React, Redux, Redux-thunk, TypeScript, REST API, JEST/RTL
