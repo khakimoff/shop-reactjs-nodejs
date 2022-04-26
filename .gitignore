@@ -1,7 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+/backend/vanila/node_modules
+/frontend/node_modules
 /.pnp
 .pnp.js
 
@@ -23,5 +24,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # other
-backend/vanila/node_modules
-frontend/node_modules
+.idea
