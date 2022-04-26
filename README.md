@@ -15,8 +15,8 @@ npm start
 ```
 
 
-## Screenshot 
-### Desctop main 
+### Screenshot 
+#### Desctop main 
 <img width="790" alt="Снимок экрана 2021-12-07 в 10 42 55" src="https://user-images.githubusercontent.com/34871899/144987613-ea514adf-3293-4e5a-b68d-c5d5a3a2929b.png"><br />
 ### Desctop cart
 <img width="795" alt="Снимок экрана 2021-12-07 в 10 43 12" src="https://user-images.githubusercontent.com/34871899/144987641-3243e521-1422-471e-8cc8-7d8976536701.png"><br />
