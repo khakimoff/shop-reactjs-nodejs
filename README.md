@@ -1,18 +1,21 @@
 # Getting Started with react-redux-jest-shop
 
-## Shop cart page with use:
-React, Redux, Redux-thunk, TypeScript, REST API, JEST/RTL, Node.js
+> Project with use: React, Redux, Redux-thunk, TypeScript, REST API, JEST/RTL, Node.js
 
+```
 ## Steps for run server
 cd backend-express <br />
 yarn install <br />
 node app.js <br />
+```
 
+```
 ## Steps for run client
 cd frontend <br />
 yarn install <br />
 yarn start <br />
 yarn test <br />
+```
 
 ## Screenshot 
 ### Desctop main 
