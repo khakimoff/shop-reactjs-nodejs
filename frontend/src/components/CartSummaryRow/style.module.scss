@@ -1,0 +1,12 @@
+.row {
+	display: grid;
+	grid-template-columns: 55% 45%;
+
+	@media screen and (max-width: 1100px) {
+		grid-template-columns: 20% 80%;
+	}
+
+	p {
+		font-weight: 500
+	}
+}

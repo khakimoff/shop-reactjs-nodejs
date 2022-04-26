@@ -1,4 +1,4 @@
-import './style.scss';
+import style from './style.module.scss';
 // Type
 type TypeCartRow = {
   title: string,
@@ -11,7 +11,7 @@ const defaultProps = {
 };
 
 const CartRow = ({ title, amount, sum }: TypeCartRow) => (
-  <div className="CartRow">
+  <div className={style.row}>
     <p>
       {amount === 0 ? '' : amount}
       {' '}

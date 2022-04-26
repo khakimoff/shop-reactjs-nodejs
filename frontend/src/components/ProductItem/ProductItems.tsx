@@ -1,8 +1,8 @@
 import { useDispatch } from 'react-redux';
-import ButtonComp from '../Button/Button' // eslint-disable-line
-import ImageComp from '../ImageComp/Image' // eslint-disable-line
-import { addToCart } from '../../redux/actions/cartAction'; // eslint-disable-line
-import './style.scss';
+import ButtonComp from '../Button/Button';
+import ImageComp from '../ImageComp/Image';
+import { addToCart } from '../../redux/actions/cartAction';
+import style from './style.module.scss';
 
 // Type
 export type ProductItemsType = {
@@ -25,7 +25,7 @@ const ProductItems = ({ products }: ProductItemsType) => {
         Total:&nbsp;
         <b>{products.length}</b>
       </p>
-      <ul className="ProductItems">
+      <ul className={style.items}>
         {products.map((item: ProductItemPropsType) => (
           <li
             key={item.id}

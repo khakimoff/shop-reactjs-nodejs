@@ -1,7 +1,7 @@
-import ButtomComp from '../Button/Button'; // eslint-disable-line
-import CartRowComp from '../CartSummaryRow/CartSummaryRow'; // eslint-disable-line
-import InputComp from '../Input/Input'; // eslint-disable-line
-import './style.scss';
+import ButtomComp from '../Button/Button';
+import CartRowComp from '../CartSummaryRow/CartSummaryRow'; 
+import InputComp from '../Input/Input'; 
+import style from './style.module.scss';
 
 // Type
 type TypeCartSummary = {
@@ -24,7 +24,7 @@ const CartSummary = ({ items }: TypeCartSummary) => {
   const sumTotal = parseFloat((sumItem.reduce((a, b) => a + b, 0)).toFixed(2));
 
   return (
-    <div className="CartSummary">
+    <div className={style.summary}>
       <CartRowComp
         title="PCS"
         amount={quantityTotal}

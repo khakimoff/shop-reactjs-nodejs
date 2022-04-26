@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss';
+import style from  './style.module.scss';
 
 // Type
 type TypeInput = {
@@ -14,7 +14,7 @@ type TypeInput = {
 const Input = ({
   type, title, ariaRequired, placeholder, htmlFor, size,
 }: TypeInput) => (
-  <div className="Input">
+  <div className={style.wrapper}>
     <label
       htmlFor={htmlFor}
     >

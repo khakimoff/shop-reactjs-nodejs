@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import ImageComp from '../ImageComp/Image'; // eslint-disable-line
+import ImageComp from '../ImageComp/Image'; 
 import Logo from '../../static/logo.png';
 import Basket from '../../static/basket.png';
-import './style.scss';
+import style from './style.module.scss';
 
 // Type
 export type NaviagationType = {
@@ -15,7 +15,7 @@ const Naviagation = () => {
 
   return (
     <header>
-      <nav className="Navigation">
+      <nav className={style.navigation}>
         <Link to="/">
           <ImageComp
             src={Logo}
@@ -24,7 +24,7 @@ const Naviagation = () => {
             alt="logo"
           />
         </Link>
-        <div>
+        <div className={style.wrapper}>
           <Link
             hidden={itemCartAmount === 0}
             to="/basket"

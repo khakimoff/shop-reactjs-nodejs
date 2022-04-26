@@ -1,8 +1,8 @@
 import { useDispatch } from 'react-redux';
-import { removeFromCart, addQuantity, decQuantity } from '../../redux/actions/cartAction'; // eslint-disable-line
-import ImageComp from '../ImageComp/Image'; // eslint-disable-line
-import ButtonComp from '../Button/Button'; // eslint-disable-line
-import './style.scss'; // eslint-disable-line
+import { removeFromCart, addQuantity, decQuantity } from '../../redux/actions/cartAction'; 
+import ImageComp from '../ImageComp/Image'; 
+import ButtonComp from '../Button/Button'; 
+import style from './style.module.scss'; 
 
 // Type
 export type CartItemsType = {
@@ -23,7 +23,7 @@ const CartItems = ({ items }: CartItemsType) => {
   const dispatch = useDispatch();
 
   return (
-    <ul className="CartItems">
+    <ul className={style.items}>
       {cartItems.map((item: CartItemPropsType) => {
         const {
           price, quantity, image, id, title,
@@ -41,7 +41,7 @@ const CartItems = ({ items }: CartItemsType) => {
               alt="product"
             />
             <p>{title}</p>
-            <div>
+            <div className={style.buttons}>
               <ButtonComp
                 title="-"
                 onClick={() => dispatch(decQuantity(id))}

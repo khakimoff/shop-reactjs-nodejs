@@ -1,6 +1,5 @@
+import styles from './style.module.scss'
 
-import './style.scss'; // eslint-disable-line
-// Type
 type TypeButton = {
   title: string,
   onClick: () => void
@@ -8,7 +7,7 @@ type TypeButton = {
 
 const Button = ({ title, onClick }: TypeButton) => (
   <button
-    className="Button"
+    className={styles.button}
     type="submit"
     onClick={onClick}
   >

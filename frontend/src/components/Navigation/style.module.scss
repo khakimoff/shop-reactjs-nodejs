@@ -1,0 +1,31 @@
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem;
+}
+
+.wrapper {
+	position: relative;
+	right: 3.5rem;
+
+	a {
+		position: fixed;
+		background: white;
+		border-radius: 13px;
+		background-color: #e6eef5;
+	}
+
+	p {
+		position: absolute;
+		top: 17%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		padding: 1px 4px 2px;
+		background: white;
+		color: red;
+		font-size: 10px;
+		font-weight: bold;
+		border: 2px solid red;
+		border-radius: 10px;
+	}
+}

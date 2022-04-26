@@ -1,12 +1,11 @@
-import './style.scss';
+import style from './style.module.scss';
 
-// Type
 type NotificationType = {
   title: string
 }
 
 const Notification = ({ title }: NotificationType) => (
-  <h1 className="Notification">
+  <h1 className={style.notification}>
     {title}
   </h1>
 );

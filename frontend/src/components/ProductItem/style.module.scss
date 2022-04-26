@@ -1,0 +1,33 @@
+.items {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 0;
+
+	@media screen and (max-width: 900px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	@media screen and (max-width: 700px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@media screen and (max-width: 500px) {
+		grid-template-columns: repeat(1, 1fr);
+
+	}
+
+	li {
+		display: inherit;
+		background-color: white;
+		margin: 3px;
+		grid-template-rows: 36% 33% 19% 8%;
+		padding: 20px;
+		border: 1px solid green;
+		border-radius: 2px;
+		place-items: center;
+	}
+
+	p {
+		text-align: center;
+	}
+}
