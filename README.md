@@ -3,19 +3,17 @@
 > Project with use: React, Redux, Redux-thunk, TypeScript, REST API, JEST/RTL, Node.js
 
 ```
-# Steps for run server
-cd backend-express <br />
-yarn install <br />
-node app.js <br />
+# Run project(backend)
+cd vanila
+npm install or yarn install
+node server
+
+# Run project(frontend)
+cd frontend
+npm install or yarn install
+npm start
 ```
 
-```
-# Steps for run client
-cd frontend <br />
-yarn install <br />
-yarn start <br />
-yarn test <br />
-```
 
 ## Screenshot 
 ### Desctop main 
