@@ -1,6 +1,6 @@
 # Getting Started with react-redux-jest-shop
 
-> Project with use: React, Redux, Redux-thunk, TypeScript, REST API, JEST/RTL, Node.js
+> Project(shop) with use: React, Redux, Redux-thunk, TypeScript, REST API, JEST/RTL, Node.js
 
 ```
 # Run project(backend)
