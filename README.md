@@ -1,4 +1,4 @@
-# Getting Started with react-redux-jest-shop
+# Getting Started with shop-reactjs-nodejs
 
 > Project(shop) with use: React, Redux, Redux-thunk, TypeScript, REST API, JEST/RTL, Node.js
 
