@@ -8,6 +8,7 @@ function fetchProducts() {
     try {
       const response = await fetch(`${process.env.REACT_APP_API_DOMAIN}/api/products`);
       const data = await response.json();
+      console.log(data, 'data')
       dispatch({ type: ProductsActionTypes.GET_PRODUCTS_SUCCESS, payload: data });
     } catch (error) {
       dispatch({ type: ProductsActionTypes.GET_PRODUCTS_FAILURE });

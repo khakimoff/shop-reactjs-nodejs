@@ -21,5 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-backend-express/node_modules/
-frontend/node_modules/
+
+# other
+backend/vanila/node_modules
+frontend/node_modules
