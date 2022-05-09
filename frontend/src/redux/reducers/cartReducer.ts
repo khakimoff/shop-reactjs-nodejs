@@ -1,4 +1,4 @@
-import { CartActionTypes, CartAction } from '../types';
+import { CartActionTypes } from '../types';
 
 // Reducer
 function cartReducer(state = [], action) {
