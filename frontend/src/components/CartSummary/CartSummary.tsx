@@ -62,7 +62,7 @@ const CartSummary = ({ items }: TypeCartSummary) => {
 
         <ButtomComp
           title="Buy"
-          onClick={() => console.log('!')} // eslint-disable-line
+          onClick={() => console.log('!')} 
         />
       </form>
     </div>

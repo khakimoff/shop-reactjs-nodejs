@@ -1,19 +1,25 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import ProductItemsComp from '../../components/ProductItem/ProductItems'; // eslint-disable-line
-import ImageComp from '../../components/ImageComp/Image'; // eslint-disable-line
-import NotificationComp from '../../components/NotificationComp/Notification'; // eslint-disable-line
-import fetchProducts from '../../redux/actions/productAction'; // eslint-disable-line
+import ProductItemsComp from '../../components/ProductItem/ProductItems'; 
+import ImageComp from '../../components/ImageComp/Image'; 
+import NotificationComp from '../../components/NotificationComp/Notification'; 
+import fetchProducts from '../../redux/actions/productAction'; 
 import Loading from '../../static/loading.gif';
-import './style.scss';
+import style from './style.module.scss';
+
+type TypeProducts = {
+  loading: boolean,
+  products: [],
+  hasErrors: string
+}
 
 type TypeProductPage = {
-  products: []
+  products: TypeProducts
 }
 
 const ProductPage = () => {
   const stateProducts = useSelector((state: TypeProductPage) => state.products);
-  const { loading, products, hasErrors }: any = stateProducts;
+  const { loading, products, hasErrors } = stateProducts;
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -25,7 +31,7 @@ const ProductPage = () => {
     if (loading) {
       return (
         <div
-          className="Loader"
+          className={style.loader}
         >
           <ImageComp
             src={Loading}
@@ -54,7 +60,7 @@ const ProductPage = () => {
   };
 
   return (
-    <div className="ProductList">
+    <div className={style.products}>
       <h3>Products list</h3>
       {renderProducts()}
     </div>

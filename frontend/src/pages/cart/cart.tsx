@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
-import NotificationComp from '../../components/NotificationComp/Notification'; // eslint-disable-line
-import CartSummaryComp from '../../components/CartSummary/CartSummary'; // eslint-disable-line
-import CartItemComp from '../../components/CartItems/CartItems';// eslint-disable-line
-import './style.scss';
+import NotificationComp from '../../components/NotificationComp/Notification'; 
+import CartSummaryComp from '../../components/CartSummary/CartSummary';
+import CartItemComp from '../../components/CartItems/CartItems';
+import styles from './style.module.scss';
 
 type TypeCart = {
   cart: [],
@@ -21,7 +21,7 @@ const CartPage = () => {
         ? (
           <>
             <h3>Cart</h3>
-            <div className="CartPage">
+            <div className={styles.cart}>
               <CartItemComp
                 items={itemsCart}
               />

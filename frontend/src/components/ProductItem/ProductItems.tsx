@@ -4,7 +4,6 @@ import ImageComp from '../ImageComp/Image';
 import { addToCart } from '../../redux/actions/cartAction';
 import style from './style.module.scss';
 
-// Type
 export type ProductItemsType = {
   products: []
 }
@@ -12,7 +11,7 @@ export type ProductItemsType = {
 export type ProductItemPropsType = {
   id: number,
   image: string,
-  title: string
+  title: string,
   price: number
 }
 

@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
 // Interface state Product
 export interface ProductsState {
-    products: any[],
+    products: Array<string>,
     loading: boolean,
     hasErrors: null | boolean,
 }
@@ -24,7 +23,7 @@ export enum ProductsActionTypes {
 // Interface AddToCart action
 export interface AddToCart {
     type: CartActionTypes.ADD_TO_CART,
-    payload: any
+    payload: string
 }
 
 // Interface RemoveFromCart action
@@ -53,7 +52,7 @@ export interface GetPtoductsAction {
 // Interface GetPtoductsSuccesAction action
 export interface GetPtoductsSuccesAction {
     type: ProductsActionTypes.GET_PRODUCTS_SUCCESS,
-    payload: any[]
+    payload: []
 }
 
 // Interface GetPtoductsFailureAction action

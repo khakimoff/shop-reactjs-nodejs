@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { render, screen } from '@testing-library/react';
 import CartSummary from '../CartSummary/CartSummary';
 

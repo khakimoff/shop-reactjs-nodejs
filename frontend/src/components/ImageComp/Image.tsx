@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Type
 type ImageType = {
   src: string,
   width?: number,

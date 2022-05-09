@@ -5,7 +5,6 @@ import Logo from '../../static/logo.png';
 import Basket from '../../static/basket.png';
 import style from './style.module.scss';
 
-// Type
 export type NaviagationType = {
   cart: []
 }

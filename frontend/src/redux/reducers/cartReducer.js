@@ -1,6 +1,4 @@
-/* eslint-disable */
 import { CartActionTypes, CartAction } from '../types';
-import { CartItemPropsType } from '../../components/CartItems/CartItems';
 
 // Reducer
 function cartReducer(state = [], action) {

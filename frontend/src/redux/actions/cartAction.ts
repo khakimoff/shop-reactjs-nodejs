@@ -1,6 +1,6 @@
 import {
   CartActionTypes, AddToCart, RemoveFromCart, AddQuantity, DeqQuantity,
-} from '../types'; // eslint-disable-line
+} from '../types';
 
 // Create Redux action creators that return an action
 // Added of a specific product depending on id

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useDispatch } from 'react-redux';
 import { removeFromCart, addQuantity, decQuantity } from '../../redux/actions/cartAction'; 
 import ImageComp from '../ImageComp/Image'; 
@@ -11,9 +12,9 @@ export type CartItemsType = {
 
 export type CartItemPropsType = {
   price: number,
-  quantity: number
+  quantity: number,
+  id: string,
   image: string,
-  id: any,
   title: string
 }
 

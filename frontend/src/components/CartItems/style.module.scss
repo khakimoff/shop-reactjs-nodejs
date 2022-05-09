@@ -25,26 +25,26 @@
 			grid-template-columns: 18% 22% 24% 19% 7%;
 		}
 	}
+}
 
-	.buttons {
-		display: grid;
-		grid-template-columns: 30% 40% 30%;
-		width: 136px;
-		align-items: center;
+.buttons {
+	display: grid;
+	grid-template-columns: 30% 40% 30%;
+	width: 136px;
+	align-items: center;
 
-		@media screen and (max-width: 600px) {
-			width: 81px;
-		}
+	@media screen and (max-width: 600px) {
+		width: 81px;
+	}
 
-		@media screen and (max-width: 500px) {
-			width: 73px;
-		}
+	@media screen and (max-width: 500px) {
+		width: 73px;
+	}
 
-		p {
-			margin: 0;
-			text-align: center;
-
-		}
+	p {
+		margin: 0;
+		text-align: center;
 
 	}
+
 }

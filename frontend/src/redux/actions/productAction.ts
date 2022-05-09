@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux';
-import { ProductsActionTypes, ProductsAction } from '../types'; // eslint-disable-line
+import { ProductsActionTypes, ProductsAction } from '../types'; 
 
 // Combine them all in an asynchronous thunk
 function fetchProducts() {

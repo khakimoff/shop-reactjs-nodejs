@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { render, screen } from '@testing-library/react';
 import Notification from '../NotificationComp/Notification';
 

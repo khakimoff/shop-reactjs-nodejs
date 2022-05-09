@@ -4,10 +4,10 @@ import {
   BrowserRouter,
 } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from '../../redux/store'; // eslint-disable-line
-import ListProductComp from '../../pages/productsList/productsList'; // eslint-disable-line
-import CartComp from '../../pages/cart/cart'; // eslint-disable-line
-import NavigationComp from '../Navigation/Naviagation'; // eslint-disable-line
+import store from '../../redux/store';
+import ListProductComp from '../../pages/ProductsList/ProductsList';
+import CartComp from '../../pages/Cart/Cart'; 
+import NavigationComp from '../Navigation/Naviagation';
 
 const App = () => (
   <Provider store={store}>

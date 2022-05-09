@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { ProductsState, ProductsAction, ProductsActionTypes } from '../types';
 
 // Intiial state

@@ -1,4 +1,3 @@
-/* eslint-disable */
 import cartReducer from '../reducers/cartReducer';
 import productsReducer from '../reducers/productsReducer';
 import {

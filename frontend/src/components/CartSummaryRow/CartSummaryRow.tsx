@@ -1,5 +1,5 @@
 import style from './style.module.scss';
-// Type
+
 type TypeCartRow = {
   title: string,
   amount?: number,
